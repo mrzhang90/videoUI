@@ -1,0 +1,44 @@
+page{
+  background: #000;
+}
+video{
+  width:100vw;
+   height:100vh; 
+}
+.controls {
+  position: relative;
+  top: 0;
+  /* height: 100%; */
+  margin-top: 0;
+  display: flex;
+  color: #fff;
+  justify-content: flex-end;
+}
+.video-root {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  z-index:9999999;
+}
+
+.video-close {
+  position: relative;
+  top: 0;
+  margin-top: 0;
+  box-sizing: border-box;
+  height: 100rpx;
+  padding-top:50rpx;
+  padding-right:50rpx;
+  display: flex;
+  color: #fff;
+  justify-content: flex-end;
+  z-index:9999999;
+}
+
+.video-close .img {
+  width: 40rpx;
+  height: 40rpx;
+}

@@ -1,0 +1,27 @@
+/* pages/index/index.wxss */
+.wxParse-video{
+    text-align: center;
+    margin: 10px 0;
+}
+.wxParse-video-video{
+    width:100%;
+}
+/*视频列表封面  */
+.controls {
+  position: relative;
+  height: 100%;
+  margin-top: 0;
+  display: flex;
+  color: #fff;
+}
+/* 视频缩略图 */
+.img_block{
+  width:100px;
+  height:100px;line-height:100px;
+  background: #dcdcdc;
+  text-align: center;
+}
+.img_block image {
+  width: 100%;
+  height: 100%;
+}

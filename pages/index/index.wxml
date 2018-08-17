@@ -1,0 +1,15 @@
+<view>全屏视频</view>
+<view class='flex around'>
+  <view class='pr img_block' bindtap='startOnPlay' wx:for="{{videos}}" data-src="{{item.attr.src}}">
+    <view class='pc iconfont f36 icon-play icon-videoPlay zIndex1'></view>
+    <image src="{{item.attr.cover}}"></image>
+  </view>
+</view>
+<view class='h100'></view>
+<view>视频切换播放</view>
+<view class="wxParse-video" wx:for="{{videos}}" wx:key="*this" data-aa="{{item.index}}">
+  <video id="wxParse{{item.index}}" src="{{srcs['wxParse'+item.index]}}" class="wxParse-video-video" poster="{{item.attr.cover}}" bindplay="bindplay_video" data-id="wxParse{{item.index}}" custom-cache="{{false}}">
+    <cover-view class="controls" hidden="{{srcs['wxParse'+item.index]}}" bindtap="bindplay" data-id="wxParse{{item.index}}" data-src="{{item.attr.src}}">
+    </cover-view>
+  </video>
+</view>

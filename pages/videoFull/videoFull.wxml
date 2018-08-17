@@ -1,0 +1,9 @@
+<view class='video-root'>
+  <video id="myVideo" src="{{src}}" direction="{{0}}" autoplay="{{true}}" bindfullscreenchange="videofullchange" bindended="bindended" bindwaiting="bindwaiting" custom-cache="{{false}}">
+    <cover-view class="controls">
+      <cover-view class="video-close" bindtap="bind_close_video">
+        <cover-image class="img" src="/assets/images/icon_close_video.png" />
+      </cover-view>
+    </cover-view>
+  </video>
+</view>

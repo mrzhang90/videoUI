@@ -1,0 +1,49 @@
+/**app.wxss**/
+.flex{display: flex;}
+.around{justify-content: space-around;}
+.h100{height:100rpx;}
+/* 播放按钮 */
+.icon-videoPlay{
+  display: flex;align-items: center;justify-content: center;
+  width:60rpx;height:60rpx;
+  /* background-color:rgba(0,0,0,.5); */
+  border-radius: 50%;
+  border:solid 2px #fff;
+  background: #000;color:#fff;
+  text-align:center;
+}
+
+.f36 {
+  font-size: 36rpx;
+}
+.pr {
+  position: relative;
+}
+.pc {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.zIndex1 {
+  z-index: 1;
+}
+
+@font-face {
+  font-family: 'iconfont'; /* project id 702149 */
+  src: url('//at.alicdn.com/t/font_702149_nd5xfkgcvc.eot');
+  src: url('//at.alicdn.com/t/font_702149_nd5xfkgcvc.eot?#iefix') format('embedded-opentype'),
+         url('//at.alicdn.com/t/font_702149_nd5xfkgcvc.woff') format('woff'),
+         url('//at.alicdn.com/t/font_702149_nd5xfkgcvc.ttf') format('truetype'),
+         url('//at.alicdn.com/t/font_702149_nd5xfkgcvc.svg#iconfont') format('svg');
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  /* font-size:26rpx; */
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-play:before {
+  content: "\e60a";
+}
